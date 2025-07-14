@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Hero Section with 3D Model -->
+    <header id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/photo1.png" alt="About me">
+            <p>
+                I am a passionate developer creating interactive web experiences. My work blends
+                cutting-edge technology with creativity to produce engaging digital products.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>3D Modeling & Animation</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Coming soon...</p>
+    </section>
+
+    <!-- Graphic Gallery -->
+    <section id="graphic-gallery">
+        <h2>Graphic Gallery</h2>
+        <img src="assets/photo1.png" alt="Graphic Sample">
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="image-gallery">
+        <h2>Image Gallery</h2>
+        <img src="assets/photo1.png" alt="Gallery Image">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer with Newsletter Signup -->
+    <footer>
+        <form id="newsletter">
+            <label for="newsletter-email">Subscribe to our newsletter:</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

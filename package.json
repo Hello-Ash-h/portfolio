@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "scripts": {
+    "start": "npx http-server ."
+  }
+}
